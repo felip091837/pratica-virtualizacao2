@@ -28,7 +28,7 @@ while true;do
     sleep 1
 done
 
-#atribui o ip 192.168.0.1 a red-1 e 10.0.0.1 a green-1, na interface eth1
+#atribui o ip 192.168.0.2 a red-1 e 10.0.0.2 a green-1, na interface eth1
 sshpass -p 'gocubsgo' ssh -oStrictHostKeyChecking=no cirros@localhost -p 2221 "sudo ip addr add 192.168.0.2/24 dev eth1"
 sshpass -p 'gocubsgo' ssh -oStrictHostKeyChecking=no cirros@localhost -p 2222 "sudo ip addr add 10.0.0.2/24 dev eth1"
 
